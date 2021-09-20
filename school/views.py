@@ -60,7 +60,7 @@ def updateFn(request,id):
         username=request.POST['uname']
         password=request.POST['pass1']
         confirm_password=request.POST['pass2']
-        Student_details.objects.filter(id=id).update(name=name,contact=contact,Email=email,user_name=username,Password=password,Conf_password=confirm_password,)
+        Student_details.objects.filter(id=id).update(name=name,contact=contact,Email=email,user_name=username,Password=password,Conf_password=confirm_password)
     return redirect('student_details')
 
 def activeFn(request):
